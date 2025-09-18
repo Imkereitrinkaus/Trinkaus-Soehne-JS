@@ -507,30 +507,25 @@ textarea {
 @media (max-width: 900px) {
   .nav-menu {
     position: fixed;
-    background: var(--white);
     top: 70px;
     left: -100vw;
-    flex-direction: column;
     width: 100vw;
     height: calc(100vh - 70px);
-    align-items: flex-start;
-    padding: 30px 20px;
-    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.09);
-    gap: 22px;
+    background: var(--white);
     transition: left 0.35s ease-in-out;
     overflow-y: auto;
     z-index: 9999;
-    -webkit-overflow-scrolling: touch;
-    touch-action: manipulation;
   }
-
-  .nav-toggle {
-    display: flex;
-  }
-
   .nav-menu.active {
     left: 0;
   }
+
+  /* Verhindert seitliches Scrollen wenn Menü offen */
+  body.menu-open {
+    overflow-x: hidden;
+  }
+}
+
 
   .nav-link {
     font-size: 1.1rem;

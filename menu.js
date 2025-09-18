@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   `;
 
-  // Hamburger Menü-Button toggeln
   const mobileMenu = document.getElementById('mobile-menu');
   const navMenu = document.getElementById('nav-menu');
 
@@ -34,13 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.addEventListener('click', () => {
       navMenu.classList.toggle('active');
       mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
     });
 
-    // Menü schließen, wenn ein Navigationslink geklickt wird (auf Mobil)
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
         mobileMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
       });
     });
   }
