@@ -57,3 +57,4 @@ function renderArticles(articles, heading) {
 
 document.addEventListener('DOMContentLoaded', loadNews);
 
+
