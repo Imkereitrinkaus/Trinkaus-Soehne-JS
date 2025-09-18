@@ -1,7 +1,7 @@
 async function loadNews() {
   const newsFiles = [
     'news/2025-09-15-erfolgreiche-schwarmzeit.json',
-    'news/2025-09-88-volkskontrolle.json',
+    'news/2025-09-18-volkskontrolle.json',
     // Weitere News-JSON-Dateien hier ergänzen
   ];
 
@@ -56,3 +56,4 @@ function renderArticles(articles, heading) {
 }
 
 document.addEventListener('DOMContentLoaded', loadNews);
+
