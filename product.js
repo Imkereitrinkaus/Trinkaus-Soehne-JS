@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       price: pricePer500gGlass,
       size: '500g Glas',
       description: 'Feiner Honig von ersten Frühjahrsblüten bis zur Akazienblüte. Cremig gerührt und sehr schmackhaft',
-      image: 'images/fruehlingsbluete.jpg',
+      image: 'images/fruehlingsbluete.jpeg',
     },
     {
       id: 'sommertracht',
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       price: pricePer500gGlass,
       size: '500g Glas',
       description: 'Fruchtiger Honig aus der Sommertracht.',
-      image: 'images/sommertracht.jpg',
+      image: 'images/sommertracht.jpeg',
     },
   ];
 
@@ -102,3 +102,4 @@ document.addEventListener('DOMContentLoaded', () => {
     shopSection.innerHTML = formHtml;
   }
 });
+
